@@ -1,7 +1,6 @@
 {
-  "name": "node-api",
+  "name": "node_api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -10,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.6"
-  }
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tajveez/Node-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tajveez/Node-API/issues"
+  },
+  "homepage": "https://github.com/Tajveez/Node-API#readme",
+  "description": ""
 }
