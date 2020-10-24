@@ -12,6 +12,7 @@ const server = http.createServer((req, res) => {
     console.log(req.url);
     const id = req.url.split("/")[3];
     getProduct(req, res, id);
+    console.log(id);
   } else {
     res.writeHead(404, { "Content-Type": "application/json" });
     res.end(JSON.stringify({ message: "Route not found." }));
