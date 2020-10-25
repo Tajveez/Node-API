@@ -12,6 +12,23 @@ async function getProducts(req, res) {
   }
 }
 
+// @desc  Create a Product
+// @route POST /api/products/
+async function createProduct(req, res) {
+  try {
+    const product = {
+      title: "Test Product",
+      description: "This is test Product",
+      price: 120,
+    };
+    const newProduct = await Product.create(product);
+    res.writeHead(200, { "Content-Type": "application/json" });
+    return res.end(JSON.stringify(newProduct));
+  } catch (error) {
+    console.log("Controller Error: ", error);
+  }
+}
+
 // @desc  Gets All Product by Id
 // @route GET /api/product/:id
 async function getProduct(req, res, id) {
@@ -32,4 +49,5 @@ async function getProduct(req, res, id) {
 module.exports = {
   getProducts,
   getProduct,
+  createProduct,
 };
