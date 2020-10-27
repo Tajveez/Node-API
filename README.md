@@ -8,3 +8,6 @@
 
 @desc  Create a Product
 @route POST /api/products/
+
+@desc  Update a Product
+@route POST /api/products/:id
