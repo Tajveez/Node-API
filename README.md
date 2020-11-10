@@ -12,5 +12,5 @@
 @desc  Update a Product
 @route POST /api/products/:id
 
-// @desc  Delete Product by Id
-// @route DELETE /api/product/:id
+@desc  Delete Product by Id
+@route DELETE /api/product/:id
