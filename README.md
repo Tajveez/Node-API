@@ -1,4 +1,4 @@
-# Node API
+# Node API:
 
 @desc  Gets All Products
 @route GET /api/product/
